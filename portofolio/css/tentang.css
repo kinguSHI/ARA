@@ -1,0 +1,760 @@
+/* =====================================
+   ABOUT PAGE
+===================================== */
+
+.about-page {
+    padding-top: 80px;
+}
+
+
+/* =====================================
+   HERO
+===================================== */
+
+.about-hero {
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    padding:
+        110px 8%
+        100px;
+}
+
+.about-label {
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+
+    margin-bottom: 30px;
+
+    color: #777;
+
+    font-size: 11px;
+
+    letter-spacing: 5px;
+}
+
+.about-label span {
+    width: 40px;
+    height: 1px;
+
+    background: #00ffc8;
+
+    box-shadow:
+        0 0 8px rgba(0,255,200,.5);
+}
+
+.about-hero h1 {
+    max-width: 900px;
+
+    margin: 0;
+
+    font-size: clamp(55px, 8vw, 105px);
+
+    line-height: .9;
+
+    letter-spacing: -5px;
+}
+
+.about-hero h1 span {
+    display: block;
+
+    color: #555;
+
+    margin-top: 10px;
+}
+
+.about-hero > p {
+    max-width: 650px;
+
+    margin-top: 40px;
+
+    color: #858585;
+
+    font-size: 16px;
+
+    line-height: 1.9;
+}
+
+
+/* =====================================
+   PROFILE
+===================================== */
+
+.profile-section {
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    padding: 0 8% 120px;
+
+    display: grid;
+
+    grid-template-columns: 70px 1fr;
+
+    gap: 30px;
+}
+
+.section-number {
+    padding-top: 8px;
+
+    color: #00ffc8;
+
+    font-size: 11px;
+
+    letter-spacing: 2px;
+}
+
+.profile-card {
+    padding: 30px;
+
+    border: 1px solid rgba(255,255,255,.08);
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255,255,255,.035),
+            rgba(255,255,255,.01)
+        );
+
+    transition:
+        border-color .3s ease,
+        transform .3s ease;
+}
+
+.profile-card:hover {
+    border-color: rgba(0,255,200,.25);
+
+    transform: translateY(-4px);
+}
+
+.profile-card-top {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding-bottom: 20px;
+
+    border-bottom: 1px solid rgba(255,255,255,.07);
+
+    color: #555;
+
+    font-size: 9px;
+
+    letter-spacing: 3px;
+}
+
+.profile-status {
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    color: #777;
+}
+
+.profile-status i {
+    width: 6px;
+    height: 6px;
+
+    border-radius: 50%;
+
+    background: #00ffc8;
+
+    box-shadow:
+        0 0 8px rgba(0,255,200,.7);
+}
+
+.profile-card-content {
+    display: flex;
+
+    align-items: center;
+
+    gap: 40px;
+
+    padding-top: 35px;
+}
+
+.profile-symbol {
+    width: 125px;
+    height: 125px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid rgba(0,255,200,.25);
+
+    color: #00ffc8;
+
+    font-size: 35px;
+
+    font-weight: bold;
+
+    letter-spacing: -2px;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(0,255,200,.08),
+            transparent 65%
+        );
+}
+
+.profile-text h2 {
+    margin: 0;
+
+    font-size: 32px;
+
+    letter-spacing: -1px;
+}
+
+.profile-text h2 span {
+    color: #555;
+}
+
+.profile-text p {
+    max-width: 650px;
+
+    margin-top: 18px;
+
+    color: #777;
+
+    font-size: 14px;
+
+    line-height: 1.9;
+}
+
+
+/* =====================================
+   SECTION HEADING
+===================================== */
+
+.character-section,
+.journey-section {
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    padding:
+        0 8%
+        120px;
+}
+
+.section-heading {
+    display: grid;
+
+    grid-template-columns: 70px 1fr;
+
+    gap: 30px;
+
+    margin-bottom: 55px;
+}
+
+.small-title {
+    color: #555;
+
+    font-size: 9px;
+
+    letter-spacing: 4px;
+}
+
+.section-heading h2 {
+    margin-top: 12px;
+
+    font-size: clamp(35px, 5vw, 58px);
+
+    line-height: .95;
+
+    letter-spacing: -3px;
+}
+
+.section-heading h2 span {
+    color: #555;
+}
+
+
+/* =====================================
+   CHARACTER CARDS
+===================================== */
+
+.character-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 18px;
+}
+
+.character-card {
+    position: relative;
+
+    min-height: 290px;
+
+    padding: 28px;
+
+    overflow: hidden;
+
+    border: 1px solid rgba(255,255,255,.07);
+
+    background:
+        rgba(255,255,255,.018);
+
+    transition:
+        transform .35s ease,
+        border-color .35s ease,
+        background .35s ease;
+}
+
+.character-card:hover {
+    transform: translateY(-7px);
+
+    border-color: rgba(255,255,255,.16);
+
+    background:
+        rgba(255,255,255,.035);
+}
+
+.character-card.featured {
+    border-color:
+        rgba(0,255,200,.18);
+}
+
+.card-number {
+    color: #444;
+
+    font-size: 10px;
+
+    letter-spacing: 2px;
+}
+
+.card-icon {
+    margin-top: 55px;
+
+    color: #00ffc8;
+
+    font-size: 32px;
+
+    font-weight: 200;
+}
+
+.character-card h3 {
+    margin-top: 25px;
+
+    font-size: 22px;
+}
+
+.character-card p {
+    margin-top: 12px;
+
+    color: #777;
+
+    font-size: 13px;
+
+    line-height: 1.8;
+}
+
+
+/* =====================================
+   JOURNEY / TIMELINE
+===================================== */
+
+.timeline {
+    position: relative;
+
+    margin-left: 70px;
+
+    padding-left: 40px;
+
+    border-left:
+        1px solid rgba(255,255,255,.09);
+}
+
+.timeline-item {
+    position: relative;
+
+    padding-bottom: 65px;
+}
+
+.timeline-item:last-child {
+    padding-bottom: 0;
+}
+
+.timeline-marker {
+    position: absolute;
+
+    left: -46px;
+    top: 4px;
+
+    width: 11px;
+    height: 11px;
+
+    border-radius: 50%;
+
+    border: 1px solid #555;
+
+    background: #030506;
+}
+
+.timeline-item.active .timeline-marker {
+    border-color: #00ffc8;
+
+    box-shadow:
+        0 0 12px rgba(0,255,200,.4);
+}
+
+.timeline-marker span {
+    position: absolute;
+
+    inset: 3px;
+
+    border-radius: 50%;
+
+    background: #444;
+}
+
+.timeline-item.active .timeline-marker span {
+    background: #00ffc8;
+}
+
+.timeline-year {
+    color: #00ffc8;
+
+    font-size: 9px;
+
+    letter-spacing: 3px;
+}
+
+.timeline-content h3 {
+    margin-top: 10px;
+
+    font-size: 24px;
+}
+
+.timeline-content p {
+    max-width: 680px;
+
+    margin-top: 12px;
+
+    color: #777;
+
+    font-size: 14px;
+
+    line-height: 1.9;
+}
+
+.timeline-tags {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+    margin-top: 18px;
+}
+
+.timeline-tags span {
+    padding: 7px 10px;
+
+    border: 1px solid rgba(255,255,255,.08);
+
+    color: #666;
+
+    font-size: 9px;
+
+    letter-spacing: 1px;
+}
+
+
+/* =====================================
+   QUOTE
+===================================== */
+
+.personal-section {
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    padding:
+        0 8%
+        120px;
+}
+
+.personal-box {
+    position: relative;
+
+    padding:
+        65px 70px;
+
+    border:
+        1px solid rgba(0,255,200,.13);
+
+    background:
+        linear-gradient(
+            120deg,
+            rgba(0,255,200,.035),
+            transparent 70%
+        );
+}
+
+.quote-mark {
+    position: absolute;
+
+    top: 20px;
+    left: 35px;
+
+    color: rgba(0,255,200,.3);
+
+    font-family: Georgia, serif;
+
+    font-size: 70px;
+
+    line-height: 1;
+}
+
+.personal-box p {
+    max-width: 750px;
+
+    color: #bbb;
+
+    font-size: clamp(20px, 3vw, 30px);
+
+    line-height: 1.5;
+
+    letter-spacing: -.5px;
+}
+
+.quote-line {
+    width: 35px;
+    height: 1px;
+
+    margin-top: 35px;
+
+    background: #00ffc8;
+}
+
+.quote-author {
+    display: block;
+
+    margin-top: 15px;
+
+    color: #555;
+
+    font-size: 9px;
+
+    letter-spacing: 3px;
+}
+
+
+/* =====================================
+   CTA
+===================================== */
+
+.about-cta {
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    padding:
+        0 8%
+        130px;
+}
+
+.about-cta > span {
+    color: #555;
+
+    font-size: 9px;
+
+    letter-spacing: 4px;
+}
+
+.about-cta h2 {
+    max-width: 700px;
+
+    margin: 15px 0 30px;
+
+    font-size: clamp(38px, 5vw, 65px);
+
+    line-height: .95;
+
+    letter-spacing: -3px;
+}
+
+.about-cta h2 span {
+    color: #555;
+}
+
+.about-cta a {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 20px;
+
+    padding: 15px 22px;
+
+    background: white;
+
+    color: black;
+
+    text-decoration: none;
+
+    font-size: 12px;
+
+    transition:
+        background .3s ease,
+        transform .3s ease;
+}
+
+.about-cta a b {
+    font-size: 18px;
+
+    font-weight: 400;
+}
+
+.about-cta a:hover {
+    background: #00ffc8;
+
+    transform: translateY(-4px);
+}
+
+
+/* =====================================
+   MOBILE
+===================================== */
+
+@media (max-width: 700px) {
+
+    .about-hero {
+        padding:
+            80px 7%
+            80px;
+
+        text-align: center;
+    }
+
+    .about-label {
+        justify-content: center;
+
+        letter-spacing: 4px;
+    }
+
+    .about-hero h1 {
+        font-size: 52px;
+
+        letter-spacing: -3px;
+    }
+
+    .about-hero > p {
+        margin-top: 30px;
+
+        font-size: 14px;
+    }
+
+
+    .profile-section,
+    .character-section,
+    .journey-section,
+    .personal-section,
+    .about-cta {
+        padding-left: 7%;
+        padding-right: 7%;
+    }
+
+
+    .profile-section {
+        display: block;
+    }
+
+    .profile-section > .section-number {
+        margin-bottom: 20px;
+    }
+
+
+    .profile-card {
+        padding: 22px;
+    }
+
+    .profile-card-content {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 25px;
+    }
+
+    .profile-symbol {
+        width: 90px;
+        height: 90px;
+
+        font-size: 26px;
+    }
+
+    .profile-text h2 {
+        font-size: 27px;
+    }
+
+
+    .section-heading {
+        display: block;
+    }
+
+    .section-heading > .section-number {
+        margin-bottom: 25px;
+    }
+
+    .section-heading h2 {
+        font-size: 40px;
+    }
+
+
+    .character-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .character-card {
+        min-height: 240px;
+    }
+
+
+    .timeline {
+        margin-left: 10px;
+
+        padding-left: 30px;
+    }
+
+    .timeline-marker {
+        left: -36px;
+    }
+
+
+    .personal-box {
+        padding:
+            55px 25px
+            40px;
+    }
+
+    .quote-mark {
+        left: 15px;
+    }
+
+    .personal-box p {
+        font-size: 20px;
+    }
+
+
+    .about-cta h2 {
+        font-size: 42px;
+    }
+
+}
